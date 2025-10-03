@@ -21,7 +21,7 @@ body {
 
 header {
     /*background-color: darkorange;*/
-    background-image: linear-gradient(to right, gray, darkorange);
+    background-image: linear-gradient(to bottom, black, gray);
     color: white;
     padding: 10px;
     text-align: center;
@@ -30,7 +30,7 @@ header {
 }
 
 h1:hover {
-    color: gold;
+    color: gray;
 }
 
 .header {
@@ -38,12 +38,12 @@ h1:hover {
     display: flex;
     gap: 15px;
     justify-content: center;
-    text-shadow: 2px 2px 4px gold;
+    text-shadow: 2px 2px 4px black;
 }
 
 nav {
-    /*background-color: #CD5C5C;*/
-    background-image: linear-gradient(to right, gray, darkorange);
+    background-color: black;
+    /*background-image: linear-gradient(to right, black, gray);*/
     color: white;
     font-size: 1.2em;
     padding: 10px;
@@ -60,7 +60,8 @@ nav a {
 
 
 nav a:hover {
-    color: #FF8C00;
+    /*color: rgb(152, 146, 146);*/
+    font-size : 1.4em;
 }
 
 h2 {
@@ -74,12 +75,14 @@ h2 {
 
 footer {
 
-    background-image: linear-gradient(to right, gray, darkorange);
+    background-image: linear-gradient(to bottom, black, gray);
     background-size: cover;
     background-position: center;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
     font-weight: 200;
     line-height: 1;
     padding: 20px;
