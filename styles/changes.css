@@ -3,8 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  
 }
 
 html{
@@ -18,6 +17,8 @@ body{
   display: flex;
   flex-direction: column;
   background-color: black;
+  color: white;
+
 }
 
 .header{
@@ -28,7 +29,7 @@ body{
   align-items: center;
 }
 
-.header img{
+.img{
 
   width: 3rem;
   height: 3.5rem;
@@ -44,6 +45,57 @@ footer{
 
   min-height: 1.25rem;
 }
+
+.box-base{
+
+  width: 20%;
+  height: auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.211);
+  border-radius: 10px;
+  padding: 1rem;
+  
+  
+  
+}
+
+.update{
+  
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  
+}
+
+code{
+
+ background-color: rgba(128, 128, 128, 0.211);
+ border-radius: 4px;
+ padding: 0.2rem;
+}
+
+.content{
+  
+  width: 100%;
+  display: block;
+  padding-left: 2rem;
+  margin-bottom: 0.9rem;
+  
+}
+
+.content p{
+
+  padding: 0.3rem;
+}
+
+
+
 
 
 
