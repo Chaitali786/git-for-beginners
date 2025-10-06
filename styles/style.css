@@ -1,34 +1,50 @@
-*{
+* {
+
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-body {
-    background-color:pink;
+html{
+
+    height: 100vh;
+}
+
+body{
+    background-color: rgb(240, 239, 231);
     background-size: cover;
+    /*background-image: linear-gradient(to right, darkorange , pink);*/
     background-position: center;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 200;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 
 }
 
-header {
-    background-color: darkorange;
-    color: white ;
-    padding: 10px;
-    text-align: center;
-    
-    
+main{
+
+    flex: 1;
 }
 
-h1:hover{
-    color: #0ef773;
+header {
+    /*background-color: darkorange;*/
+    background-image: linear-gradient(to bottom, black, gray);
+    min-height: 1.25rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+h1:hover {
+    color: gray;
 }
 
 .header {
@@ -36,11 +52,12 @@ h1:hover{
     display: flex;
     gap: 15px;
     justify-content: center;
-    text-shadow: 2px 2px 4px #04ea1be3;
+    text-shadow: 2px 2px 4px black;
 }
 
 nav {
-    background-color: #CD5C5C;
+    background-color: black;
+    /*background-image: linear-gradient(to right, black, gray);*/
     color: white;
     font-size: 1.2em;
     padding: 10px;
@@ -57,39 +74,53 @@ nav a {
 
 
 nav a:hover {
-    color: #FF8C00;
+    /*color: rgb(152, 146, 146);*/
+    font-size : 1.4em;
 }
 
-h2{
+h2 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.info {
+    text-align: center;
+    margin-top: 5.25rem;
+    padding: 1rem 0;
+
+}
+
+.info p{
+
+  padding: 0.4rem 0;
+}
+
+footer {
+
+    background-image: linear-gradient(to bottom, black, gray);
+    min-height: 1.25rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    font-weight: 200;
+    line-height: 1;
+    padding: 20px;
     text-align: center;
 }
 
-.info{
- text-align: center;
-
-}
-footer {
-  background-color:#CD5C5C;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-weight: 200;
-  line-height: 1;
-  padding: 20px;
-  text-align: center;
-}
-
 footer a {
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a:hover {
-  color: pink;
-  font-size: 3rem;
+    color: pink;
+    font-size: 3rem;
 }
