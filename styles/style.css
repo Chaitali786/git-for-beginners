@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 
 html{
@@ -14,9 +14,8 @@ html{
 body{
     background-color: rgb(240, 239, 231);
     background-size: cover;
-    /*background-image: linear-gradient(to right, darkorange , pink);*/
     background-position: center;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -39,12 +38,12 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-
-
+    
+    
 }
 
-h1:hover {
-    color: gray;
+h1:hover{
+    color: #0ef773;
 }
 
 .header {
@@ -52,12 +51,11 @@ h1:hover {
     display: flex;
     gap: 15px;
     justify-content: center;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #04ea1be3;
 }
 
 nav {
-    background-color: black;
-    /*background-image: linear-gradient(to right, black, gray);*/
+    background-color: #CD5C5C;
     color: white;
     font-size: 1.2em;
     padding: 10px;
@@ -74,11 +72,10 @@ nav a {
 
 
 nav a:hover {
-    /*color: rgb(152, 146, 146);*/
-    font-size : 1.4em;
+    color: #FF8C00;
 }
 
-h2 {
+h2{
     text-align: center;
     padding: 1rem 0;
 }
@@ -113,14 +110,14 @@ footer {
 }
 
 footer a {
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 footer a:hover {
-    color: pink;
-    font-size: 3rem;
+  color: pink;
+  font-size: 3rem;
 }
