@@ -37,8 +37,10 @@ header {
     background-image: linear-gradient(to bottom, black, gray);
     min-height: 1.25rem;
     color: white;
-    padding: 10px;
+    padding-top: 1.9rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -50,12 +52,12 @@ h1:hover {
 .header {
     align-items: center;
     display: flex;
-    gap: 15px;
+    padding-bottom: 1rem;
     justify-content: center;
     text-shadow: 2px 2px 4px black;
 }
 
-nav {
+.nav {
     background-color: black;
     /*background-image: linear-gradient(to right, black, gray);*/
     color: white;
@@ -64,7 +66,7 @@ nav {
     text-align: center;
 }
 
-nav a {
+.nav a {
     color: white;
     font-weight: bold;
     margin: 0 15px;
@@ -73,7 +75,7 @@ nav a {
 }
 
 
-nav a:hover {
+.nav a:hover {
     /*color: rgb(152, 146, 146);*/
     font-size : 1.4em;
 }
