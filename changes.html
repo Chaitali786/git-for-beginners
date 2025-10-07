@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/changes.css">
-  <title>Changes</title>
-</head>
-<body>
-  <header>
-    <div class="header">
-      <img src="assets/changes-asset/change.logo.png" alt="img" class="img">
-      <h1>Git Changes Guide</h1>
-    </div>
-  </header>
-  <main>
-    <div class="box-base">
-    <div class="update">
-      <img src="assets/changes-asset/update_logo.svg" alt="img" class="img">
-      <h2>Update a repo</h2>
-    </div>
-    <div class="content">
-      <p><code>git pull</code>→ get new changes</p>
-      <p><code>git pull origin branch-name</code> - pull specific branch</p>
-    </div>
-    </div>
-  </main>
-  <footer></footer>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/changes.css" />
+    <title>Changes</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="assets/changes-asset/change.logo.png" alt="img" class="img" />
+        <h1>Git Changes Guide</h1>
+      </div>
+    </header>
+    <main>
+      <div class="box-base">
+        <div class="update">
+          <img
+            src="assets/changes-asset/update_logo.svg"
+            alt="img"
+            class="img"
+          />
+          <h2>Update a repo</h2>
+        </div>
+        <div class="content">
+          <p><code>git pull</code>→ get new changes</p>
+          <p><code>git pull origin branch-name</code>→  pull specific branch</p>
+        </div>
+      </div>
+
+      <div class="box-base">
+        <div class="update">
+          <img
+            src="assets/changes-asset/visibility.svg"
+            alt="img"
+            class="img"
+          />
+          <h2>Review Changes</h2>
+        </div>
+        <div class="content">
+          <p><code>git status</code>→ see changed files</p>
+          <p><code>git diff</code>→ see exact changes</p>
+          <p><code>git log</code>→ see commit history</p>
+        </div>
+      </div>
+
+      <div class="box-base">
+        <div class="update">
+          <img
+            src="assets/changes-asset/add.svg"
+            alt="img"
+            class="img"
+          />
+          <h2>Add Changes</h2>
+        </div>
+        <div class="content">
+          <p><code>git add file-name</code>→ add one file</p>
+          <p><code>git add.</code>→ add all files</p>
+          <p><code>git commit -m "message"</code>→ save with a message</p>
+        </div>
+      </div>
+
+      <div class="box-base">
+        <div class="update">
+          <img
+            src="assets/changes-asset/rocket.svg"
+            alt="img"
+            class="img"
+          />
+          <h2>Push Changes</h2>
+        </div>
+        <div class="content">
+          <p><code>git push</code>→ send your changes to GitHub</p>
+          <p><code>git pull origin branch-name</code> - pull specific branch</p>
+        </div>
+      </div>
+
+      <div class="box-base">
+        <div class="update">
+          <img
+            src="assets/changes-asset/close.svg"
+            alt="img"
+            class="img"
+          />
+          <h2>Remove Changes</h2>
+        </div>
+        <div class="content">
+          <p><code>git reset--soft Head~1</code>→ undo last commit(keep files)</p>
+          <p><code>git reset --hard Head~1</code> - delete commit & changes</p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
