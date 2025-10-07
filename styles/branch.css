@@ -2,20 +2,33 @@
     margin:0;
     padding:0;
 }
+body{
+   background-color:rgb(6, 6, 6);
+}
 
 main{
-    padding:20px;
-    margin:20px;
+    padding:10px;
+    margin:10px;
     justify-content:left;
-
+    
 }
-ul {
+.nav{
+  background-image: linear-gradient(to bottom, black, gray);
+}
+.container{
+ 
+  padding:10px;
+  margin:10px;
+  color:azure;
+}
+ul,ol {
   background: rgb(71, 71, 71);
   padding: 20px;
   margin :10px;
+  border-radius: 10px;
 }
 
-ul li {
+ul,ol li {
   
   color: rgb(244, 244, 248);
   margin: 5px;
