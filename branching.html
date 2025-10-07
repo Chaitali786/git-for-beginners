@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git For Beginner </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/branch.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        <h1>Git for Beginners</h1>
+        </div>
+    </header>
+<main>
+    <nav>
+        <a href="about_us.html">About Us</a>
+        <a href="branching.html">Branching</a>
+        <a href="changes.html">Changes</a>
+        <a href="project.html">Project</a>
+       
+        
+    </nav>      
+ 
+ <div class="info">
+  <div><h2>Git Branching Guide</h2></div>
+   <h3>
+        <p>
+
+            Branching helps minimise conflicts and isolate work from the main
+            codebase. It also “quarantines” unreviewed code or potential bugs so
+            they don’t affect the main branch.
+
+            Every Git project starts with a single branch — usually called main (or
+            master in older repositories).
+
+        </p>
+        <br>
+        <p>
+            Devs don’t work directly on main
+            With multiple developers contributing simultaneously, the main branch
+            can quickly become messy with conflicts.
+
+        </p>
+        <br>
+        <p>
+           Best practice 
+           <ul >
+            <li>Each developer creates a separate branch for their work</li>
+            <li>They make commits and test their code inside that branch.</li>
+            <li>Once the work is complete and reviewed, the branch is merged back
+                into main.</li>          
+           </ul>
+        </p>
+        <br>
+        <p>
+            Benefits
+            Best practice 
+           <ul >
+            <li>Reduces conflicts on main.</li>
+            <li>Keeps untested or experimental code separate.</li>
+            <li>Makes collaboration cleaner and easier to manage.</li>          
+           </ul>
+       </p>
+        <br>
+        <p>
+            Create branches.
+            To create a branch, use the checkout command. The new branch will be an exact copy of the branch you
+            were on when you ran the command. Typically, new branches are always created from the main branch
+             <p><code>git  git checkout -b branch-name</code> - pull specific branch</p>
+             <p><code> git checkout branch-name</code> // If you want to switch to an existing branch, omit -b</p>
+             Once inside the new branch, you can add, commit, and push changes as usual. These changes will not affect other branches.            
+            <p><code> git checkout .</code> // discards all un-staged changes in the current branch but keeps you on the same branch.</p>
+        </p>
+        <br>
+        <p>
+            Merge main into your branch.
+            <p>When you’ve finished working in your branch, before opening the PR, it’s good to update your branch and resolve
+               conflicts. Since your branch was created from an earlier version of main, conflicts are possible. 
+                Using branches allows you to isolate these conflicts without affecting other branches.</p>
+            <ul>
+                <li>
+                    Switch to the main branch and update it. This ensures your local main branch is up-to-date.
+                    <code>git checkout main</code>
+                    <code>git pull</code>
+                </li>
+                <li>
+                    witch back to your feature branch and merge the latest main into it:
+                    <code> git checkout your-branch   </code>
+                    <code> git merge main </code>
+                </li>
+            </ul>
+            Any conflicts will appear in your branch, not in main. 
+            <span>*** Remember: you merge other branches into your current branch, not the other way around.***</span>
+        </p>
+        <br>
+        <p>
+            Resolve conflicts
+            <p>If you encounter a conflict, the only way to resolve it is to manually decide which code to keep. </p>
+            <p>Often, you’ll want to keep all the code, the conflict usually happens because two sets of changes were made on the
+                same lines.</p>
+            <p>VS Code provides tools to help with this, but when you’re learning version control, it’s a good idea to resolve
+                conflicts manually. </p>
+            <p>Conflicts are marked in the file with symbols like <<<<<<<, =======, and >>>>>>>. 
+               You will need to decide to keep the current change or accept the incoming change, or keep both to resolve the
+               conflict.</p>
+            <p>️Always check with your team members to ensure you don’t accidentally delete any important code</p>
+        </p>
+     </h3>   
+
+   
+
+ </div>
+ </main>
+<footer>
+    <p class="follow">Follow us on :
+        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+    </p>
+    <p class="follow">&copy;2025 All rights reserved.</p>
+</footer>
+</body>
+</html>
