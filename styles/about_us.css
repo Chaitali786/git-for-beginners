@@ -1,18 +1,70 @@
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 
+html {
+  height: 100vh;
+}
+
+header {
+  background-image: linear-gradient(to bottom, black, gray);
+  min-height: 1.25rem;
+  color: white;
+  padding-top: 1.9rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1:hover {
+  color: gray;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-size: 1.4em;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+body{
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
 
 .about{    
     align-items: flex-start;
     border-radius: 8px;
     display: flex;
-    font-size: large;
+    font-size: 1.4em;
     gap: 20px;
     height: auto;
     line-height: 1;
@@ -25,21 +77,24 @@
     max-width: 70%;
     text-align: left;
     
+    
 }
 .about {
-    display: flex;
-    gap: 20px;
-    padding: 40px 20px;
+    align-items: center;
     background-color: gray;
     color: white;
-    align-items: center;
+    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    
 }
 
 .about-img {
-    width: 300px;
-    height: auto;
     border-radius: 8px;
+    height: auto;
+    width: 300px;
+    
 }
 
 .aboutinfo {
@@ -50,17 +105,17 @@
 /* Team Section */
 .team-section {
     background-color: gray;
-    text-align: center;
     padding: 40px 20px;
-    /*background-color: #f7f7f7;*/
-
+    text-align: center;
+    font-size: 1.2em;
+    
 }
 
 .team-members {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
+    justify-content: center;
     margin-top: 20px;
 }
 
