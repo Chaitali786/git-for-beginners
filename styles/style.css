@@ -24,25 +24,20 @@ body {
 }
 
 main {
-
   flex: 1;
   padding-top: 8rem;
-  
-}
-sup {
-    vertical-align: sub;
-    font-size: smaller;
+  background-color: gray;
 }
 
+
 header {
- 
-  background-image: linear-gradient(to bottom, black, gray);
+  background-image: linear-gradient(to top, black, gray);
   min-height: 10%;
-  color: white;
+  color: rgb(240, 239, 231);
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   position: fixed;
   width: 100%;
@@ -50,61 +45,68 @@ header {
   z-index: 1000;
 }
 
-h1:hover {
-  color: gray;
-}
-
 .header {
-  align-items: center;
   display: flex;
-  padding: 1.5rem 0;
- 
+  justify-content: space-between;
+  padding: 1.5rem;
   text-shadow: 2px 2px 4px black;
+  width: 100%;
 }
 
-.header-title{
-
+.header-title {
   display: flex;
   flex-direction: column;
- 
+  
 }
 
-.header-title h1{
-
+.header-title h1 {
+  font-size: 1.65rem;
   display: flex;
   align-self: flex-start;
 }
 
 .logo {
+  display: flex;
+  padding-left: 2rem;
+  border: 1px solid transparent;
+}
+
+.logo:hover {
+  border: 1px solid rgb(240, 239, 231);
+  padding: 0.1rem;
+  border-radius: 4px;
+}
+
+.logo-img {
   width: 3rem;
   height: 3rem;
-  background-image: url('../assets/homePage-asset/Github-Logo.webp');
+  background-image: url("../assets/homePage-asset/Github-Logo.webp");
   background-size: cover;
   background-position: center;
   margin: 0 1rem;
-  
-  
 }
 
 .nav {
-  background-color: black;
   color: white;
   font-size: 1.2em;
   padding: 10px;
-  width: 100%;
-  
+  align-self: flex-end;
+  /*width: 100%;*/
 }
 
 .nav a {
   color: white;
-  font-weight:300;
+  font-weight: 300;
   margin: 0 15px;
   text-decoration: none;
   font-size: 0.9rem;
+  border: 1px solid transparent;
 }
 
 .nav a:hover {
-  
+  border: 1px solid rgb(240, 239, 231);
+  padding: 0.5rem;
+  border-radius: 4px;
   font-size: 1rem;
 }
 
@@ -114,19 +116,21 @@ h2 {
 }
 
 .info {
-
   width: 100%;
-  min-height: 100vh;
+
   text-align: center;
-  padding: 8rem 0;
-  
+  padding: 2rem 0;
 }
 
 .info p {
-  padding: 0.4rem;
+  padding: 0.8rem;
   font-size: 1rem;
 }
 
+.info a{
+
+  color: rgb(240, 239, 231);
+}
 
 footer {
   background-image: linear-gradient(to bottom, black, gray);
@@ -153,14 +157,67 @@ footer a {
   margin: 0 10px;
 }
 
-footer p{
-
-font-size: 1rem;
-
+footer p {
+  font-size: 1rem;
 }
 
 footer a:hover {
-  
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+@media screen and (max-width:375px) {
+  
+  .logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+  }
+
+  .logo-img{
+
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  .header-title{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+     
+  }
+
+  .header-title h1{
+
+    font-size: 1.4rem;
+    align-self: flex-start;
+  }
+
+  .header-title h4{
+
+    font-size: 0.5rem;
+  }
+
+  .nav{
+
+    font-size: 0.75rem;
+    padding-left: 5.5rem;
+
+  }
+
+  .logo-img{
+
+    margin: 0;
+  }
+
+  footer{
+    
+    display: flex;
+    flex-direction: column;
+
+  }
 }
