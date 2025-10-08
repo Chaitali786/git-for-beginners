@@ -29,6 +29,10 @@ main {
   padding-top: 8rem;
   
 }
+sup {
+    vertical-align: sub;
+    font-size: smaller;
+}
 
 header {
  
@@ -54,7 +58,7 @@ h1:hover {
   align-items: center;
   display: flex;
   padding: 1.5rem 0;
-  justify-content: center;
+ 
   text-shadow: 2px 2px 4px black;
 }
 
@@ -62,6 +66,7 @@ h1:hover {
 
   display: flex;
   flex-direction: column;
+ 
 }
 
 .header-title h1{
@@ -113,7 +118,7 @@ h2 {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 5rem 0;
+  padding: 8rem 0;
   
 }
 
