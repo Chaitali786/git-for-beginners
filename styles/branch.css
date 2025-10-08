@@ -51,7 +51,7 @@ p {
 
 ul, ol {
   background: #2c2c2c;
-  border-left: 4px solid #4CAF50;
+  border-left: 4px solid rgb(240, 239, 231);
   padding: 20px 30px;
   margin: 20px 0;
   border-radius: 10px;
@@ -80,27 +80,7 @@ code {
 }
 
 
-nav {
-  background: #121212;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  
-  padding: 15px 0;
-  border-bottom: 1px solid #333;
-  flex-wrap:wrap;
-}
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #4CAF50;
-}
 
 
 footer {
@@ -125,31 +105,10 @@ footer .fa:hover {
 
 @media (max-width: 768px) {
   
-  nav {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;    
-    gap: 5px;
-    padding: 10px 30px;
-    max-width: 100%;   
-    
-  }
-
-  nav a {
-    font-size: 14px;
-    padding: px 0;
-  }
-
-  nav a:hover {
-  color: #4CAF50;
-  }
+  
 
  
-  main {
-    padding-top: 60px;
-    margin-top : 0 ; 
-    
-  }
+ 
 
   
   h1, h2, h3 {
