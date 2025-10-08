@@ -11,7 +11,6 @@ html {
 body {
   background-color: rgb(240, 239, 231);
   background-size: cover;
-  /*background-image: linear-gradient(to right, darkorange , pink);*/
   background-position: center;
   color: black;
   display: flex;
@@ -25,18 +24,26 @@ body {
 }
 
 main {
+
   flex: 1;
+  padding-top: 8rem;
+  
 }
 
 header {
-  /*background-color: darkorange;*/
+ 
   background-image: linear-gradient(to bottom, black, gray);
-  min-height: 1.25rem;
+  min-height: 10%;
   color: white;
-  padding-top: 1.9rem;
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 h1:hover {
@@ -46,30 +53,54 @@ h1:hover {
 .header {
   align-items: center;
   display: flex;
-  padding-bottom: 1rem;
+  padding: 1.5rem 0;
   justify-content: center;
   text-shadow: 2px 2px 4px black;
 }
 
+.header-title{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title h1{
+
+  display: flex;
+  align-self: flex-start;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  background-image: url('../assets/homePage-asset/Github-Logo.webp');
+  background-size: cover;
+  background-position: center;
+  margin: 0 1rem;
+  
+  
+}
+
 .nav {
   background-color: black;
-  /*background-image: linear-gradient(to right, black, gray);*/
   color: white;
   font-size: 1.2em;
   padding: 10px;
-  text-align: center;
+  width: 100%;
+  
 }
 
 .nav a {
   color: white;
-  font-weight: bold;
+  font-weight:300;
   margin: 0 15px;
   text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .nav a:hover {
-  /*color: rgb(152, 146, 146);*/
-  font-size: 1.4em;
+  
+  font-size: 1rem;
 }
 
 h2 {
@@ -78,18 +109,23 @@ h2 {
 }
 
 .info {
+
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
-  margin-top: 5.25rem;
-  padding: 1rem 0;
+  padding: 5rem 0;
+  
 }
 
 .info p {
-  padding: 0.4rem 0;
+  padding: 0.4rem;
+  font-size: 1rem;
 }
+
 
 footer {
   background-image: linear-gradient(to bottom, black, gray);
-  min-height: 1.25rem;
+  min-height: 10%;
   background-size: cover;
   background-position: center;
   color: white;
@@ -106,12 +142,20 @@ footer {
 footer a {
   color: white;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 800;
   text-decoration: none;
   margin: 0 10px;
 }
 
+footer p{
+
+font-size: 1rem;
+
+}
+
 footer a:hover {
-  color: pink;
-  font-size: 3rem;
+  
+  font-size: 1.5rem;
+  font-weight: bold;
 }
