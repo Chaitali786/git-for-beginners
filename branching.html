@@ -79,21 +79,21 @@
                     <pre><code>git checkout -b branch-name</code></pre>
                     <p>This creates and switches to a new branch called <code>branch-name</code>.</p>
                     </li>
-                <li>
-                <strong>Switch to an existing branch:</strong>
-                <pre><code>git checkout branch-name</code></pre>
-                <p>Use this if the branch already exists. Omit the <code>-b</code> flag.</p>
-                </li>
-                <li>
-                <strong>Discard all un-staged changes:</strong>
-                <pre><code>git checkout .</code></pre>
-                <p>This reverts un-staged changes in your current working directory without switching branches.</p>
-                </li>
-            </ul>
-            <p>
-                Once you're inside the new branch, you can <code>add</code>, <code>commit</code>, and <code>push</code> changes as usual.
-                These changes will not affect other branches unless you merge them later.
-            </p>
+                    <li>
+                    <strong>Switch to an existing branch:</strong>
+                    <pre><code>git checkout branch-name</code></pre>
+                    <p>Use this if the branch already exists. Omit the <code>-b</code> flag.</p>
+                    </li>
+                    <li>
+                    <strong>Discard all un-staged changes:</strong>
+                    <pre><code>git checkout .</code></pre>
+                    <p>This reverts un-staged changes in your current working directory without switching branches.</p>
+                    </li>
+                </ul>
+                <p>
+                    Once you're inside the new branch, you can <code>add</code>, <code>commit</code>, and <code>push</code> changes as usual.
+                    These changes will not affect other branches unless you merge them later.
+                </p>
             </article>
             <br>
             <article>
@@ -109,17 +109,15 @@
                 <li>
                 <strong>Switch to the main branch and update it:</strong>
                 <p>This ensures your local <code>main</code> branch is up to date with the latest changes.</p>
-                <pre>
-                    <code>git checkout main </code>
-                    <code>git pull</code>
-                </pre>
+                <pre><code>git checkout main </code></pre>
+                 <pre><code>git pull</code> </pre>
+                
                 </li>
                 <li>
                 <strong>Switch back to your feature branch and merge <code>main</code> into it:</strong>
-                <pre>
-                    <code>git checkout your-branch</code>
-                    <code>git merge main</code>
-                </pre>
+                <pre><code>git checkout your-branch</code></pre>
+                <pre><code>git merge main</code></pre>
+                
                 </li>
             </ol>
 
@@ -148,14 +146,14 @@
                 <p>
                     Conflicts are clearly marked in your file like this:
                 </p>
-                <pre>
+                
                     <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 
                     your changes
                     =======
                     incoming changes
                     &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
                     </code>
-                </pre>
+               
 
             <p>
                 You will need to choose between:
