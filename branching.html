@@ -1,185 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git For Beginner </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/branch.css">     
+    <link rel="stylesheet" href="./styles/branch.css">
 </head>
+
 <body>
     <header>
-     <div class="header">
-        <div class="logo">
-        <div class="logo-img">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-img">
+                </div>
+                <div class="header-title">
+                    <h1>Git</h1>
+                    <h4>for Beginners</h4>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="branching.html">Branching</a>
+                <a href="changes.html">Changes</a>
+                <a href="project.html">Project</a>
+                <a href="about_us.html">About Us</a>
+            </div>
         </div>
-        <div class="header-title">
-          <h1>Git</h1>
-          <h4>for Beginners</h4>
-        </div>
-        </div>
-        <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="branching.html">Branching</a>
-        <a href="changes.html">Changes</a>
-        <a href="project.html">Project</a>
-        <a href="about_us.html">About Us</a>
-      </div>
-      </div>
     </header>
 
-    <main >
+    <main>
         <div class="info">
             <article>
-            <h3>Git Branching</h3>    
-            <p>
-                Branching helps minimize conflicts and isolate work from the main
-                codebase. It also “quarantines” unreviewed code or potential bugs so
-                they don’t affect the main branch.
-                Every Git project starts with a single branch — usually called main (or
-                master in older repositories).
-                Devs don’t work directly on main
-                With multiple developers contributing simultaneously, the main branch
-                can quickly become messy with conflicts.
-            </p>        
-            <p>
-                <bold>Best practice </bold>
-                <ul >
+                <h1>Git Branching</h1>
+                <p>
+                    Branching helps minimize conflicts and isolate work from the main
+                    codebase. It also “quarantines” unreviewed code or potential bugs so
+                    they don’t affect the main branch.
+                    Every Git project starts with a single branch — usually called main (or
+                    master in older repositories).
+                    Devs don’t work directly on main
+                    With multiple developers contributing simultaneously, the main branch
+                    can quickly become messy with conflicts.
+                </p>
+                <p>
+                    <bold>Best practice </bold>
+                <ul>
                     <li>Each developer creates a separate branch for their work</li>
                     <li>They make commits and test their code inside that branch.</li>
                     <li>Once the work is complete and reviewed, the branch is merged back
-                        into main.</li>          
+                        into main.</li>
                 </ul>
-            </p>         
-            <p>
-                Benefits Best practice 
-                <ul >
+                </p>
+                <p>
+                    Benefits Best practice
+                <ul>
                     <li>Reduces conflicts on main.</li>
                     <li>Keeps untested or experimental code separate.</li>
-                    <li>Makes collaboration cleaner and easier to manage.</li>          
+                    <li>Makes collaboration cleaner and easier to manage.</li>
                 </ul>
-            </p>
+                </p>
             </article>
             <article>
-            <h2>Create Branches</h2>
+                <h2>Create Branches</h2>
                 <p>
-                    To create a branch, use the <code>checkout</code> command. The new branch will be an exact copy of the branch you
-                    were on when you ran the command. Typically, new branches are created from the <strong>main</strong> branch.
+                    To create a branch, use the <code>checkout</code> command. The new branch will be an exact copy of
+                    the branch you
+                    were on when you ran the command. Typically, new branches are created from the <strong>main</strong>
+                    branch.
                 </p>
                 <ul>
                     <li>
-                    <strong>Create and switch to a new branch:</strong>
-                    <pre><code>git checkout -b branch-name</code></pre>
-                    <p>This creates and switches to a new branch called <code>branch-name</code>.</p>
+                        <strong>Create and switch to a new branch:</strong>
+                        <pre><code>git checkout -b branch-name</code></pre>
+                        <p>This creates and switches to a new branch called <code>branch-name</code>.</p>
                     </li>
                     <li>
-                    <strong>Switch to an existing branch:</strong>
-                    <pre><code>git checkout branch-name</code></pre>
-                    <p>Use this if the branch already exists. Omit the <code>-b</code> flag.</p>
+                        <strong>Switch to an existing branch:</strong>
+                        <pre><code>git checkout branch-name</code></pre>
+                        <p>Use this if the branch already exists. Omit the <code>-b</code> flag.</p>
                     </li>
                     <li>
-                    <strong>Discard all un-staged changes:</strong>
-                    <pre><code>git checkout .</code></pre>
-                    <p>This reverts un-staged changes in your current working directory without switching branches.</p>
+                        <strong>Discard all un-staged changes:</strong>
+                        <pre><code>git checkout .</code></pre>
+                        <p>This reverts un-staged changes in your current working directory without switching branches.
+                        </p>
                     </li>
                 </ul>
                 <p>
-                    Once you're inside the new branch, you can <code>add</code>, <code>commit</code>, and <code>push</code> changes as usual.
+                    Once you're inside the new branch, you can <code>add</code>, <code>commit</code>, and
+                    <code>push</code> changes as usual.
                     These changes will not affect other branches unless you merge them later.
                 </p>
             </article>
             <br>
             <article>
-            <h2>Merge <code>"main"</code> into Your Branch</h2>
-            <p>
-                When you’ve finished working in your feature branch, it’s a good idea to update it before opening a pull request. 
-                Since your branch was likely created from an earlier version of <code>main</code>, there could be conflicts.
-            </p>
-            <p>
-                Using branches allows you to isolate these conflicts without affecting other developers or the main codebase.
-            </p>
-            <ol>
-                <li>
-                <strong>Switch to the main branch and update it:</strong>
-                <p>This ensures your local <code>main</code> branch is up to date with the latest changes.</p>
-                <pre><code>git checkout main </code></pre>
-                 <pre><code>git pull</code> </pre>
-                
-                </li>
-                <li>
-                <strong>Switch back to your feature branch and merge <code>main</code> into it:</strong>
-                <pre><code>git checkout your-branch</code></pre>
-                <pre><code>git merge main</code></pre>
-                
-                </li>
-            </ol>
+                <h2>Merge <code>"main"</code> into Your Branch</h2>
+                <p>
+                    When you’ve finished working in your feature branch, it’s a good idea to update it before opening a
+                    pull request.
+                    Since your branch was likely created from an earlier version of <code>main</code>, there could be
+                    conflicts.
+                </p>
+                <p>
+                    Using branches allows you to isolate these conflicts without affecting other developers or the main
+                    codebase.
+                </p>
+                <ol>
+                    <li>
+                        <strong>Switch to the main branch and update it:</strong>
+                        <p>This ensures your local <code>main</code> branch is up to date with the latest changes.</p>
+                        <pre><code>git checkout main </code></pre>
+                        <pre><code>git pull</code> </pre>
 
-            <p>
-                Any merge conflicts will appear in your branch — not in <code>main</code>. You can safely resolve them in isolation.
-            </p>
+                    </li>
+                    <li>
+                        <strong>Switch back to your feature branch and merge <code>main</code> into it:</strong>
+                        <pre><code>git checkout your-branch</code></pre>
+                        <pre><code>git merge main</code></pre>
 
-            <p>
-                <strong> Note:</strong> You always merge other branches <strong>into your current branch</strong>, not the other way around.
-            </p>
+                    </li>
+                </ol>
+
+                <p>
+                    Any merge conflicts will appear in your branch — not in <code>main</code>. You can safely resolve
+                    them in isolation.
+                </p>
+
+                <p>
+                    <strong> Note:</strong> You always merge other branches <strong>into your current branch</strong>,
+                    not the other way around.
+                </p>
             </article>
             <br>
             <article>
                 <h2>Resolve Conflicts</h2>
                 <p>
-                    If you encounter a conflict during a merge, the only way to resolve it is to manually decide which code to keep.
+                    If you encounter a conflict during a merge, the only way to resolve it is to manually decide which
+                    code to keep.
                     Conflicts typically occur when changes have been made to the same lines of code in both branches.
                 </p>
                 <p>
-                    Often, you may want to keep all the code — but you’ll need to make a conscious decision about which version (or combination) to retain.
+                    Often, you may want to keep all the code — but you’ll need to make a conscious decision about which
+                    version (or combination) to retain.
                 </p>
                 <p>
-                    VS Code provides helpful tools to assist with conflict resolution, but when you’re learning version control,
+                    VS Code provides helpful tools to assist with conflict resolution, but when you’re learning version
+                    control,
                     it’s recommended to practice resolving them manually to better understand how Git works.
                 </p>
                 <p>
                     Conflicts are clearly marked in your file like this:
-                </p>
-                
-                    <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 
+               
+                <code>
+                    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 
                     your changes
                     =======
                     incoming changes
                     &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
-                    </code>
-               
+                    
+                </code>
+                 </p>
 
-            <p>
-                You will need to choose between:
-            </p>
-            <ul>
-                <li>Keeping the current change</li>
-                <li>Accepting the incoming change</li>
-                <li>Keeping both changes and editing the file accordingly</li>
-            </ul>
 
-            <p>
-                <strong>Always check with your team members</strong> before resolving and committing, to ensure you don’t remove or overwrite important code by mistake.
-            </p>
+
+                <p>
+                    You will need to choose between:
+                </p>
+                <ul>
+                    <li>Keeping the current change</li>
+                    <li>Accepting the incoming change</li>
+                    <li>Keeping both changes and editing the file accordingly</li>
+                </ul>
+
+                <p>
+                    <strong>Always check with your team members</strong> before resolving and committing, to ensure you
+                    don’t remove or overwrite important code by mistake.
+                </p>
             </article>
         </div>
     </main>
     <footer>
-      <p class="follow">
-        Follow us on :
-        <a
-          href="https://www.facebook.com/"
-          class="fa fa-facebook"
-          target="_blank"
-        ></a>
-        <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
-        <a
-          href="https://www.instagram.com"
-          class="fa fa-instagram"
-          target="_blank"
-        ></a>
-      </p>
-      <p class="follow">&copy;2025 All rights reserved.</p>
+        <p class="follow">
+            Follow us on :
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+        </p>
+        <p class="follow">&copy;2025 All rights reserved.</p>
     </footer>
 </body>
+
 </html>

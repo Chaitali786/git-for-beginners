@@ -7,95 +7,21 @@
   box-sizing: border-box;
 }
 
-/* =========================
-   Body
-========================= */
-body {
-  background-color: #1a1a1a;
-  color: #e2e2e2;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 20px;
-  padding-bottom: 30px;
-}
+
 
 /* =========================
    Header Horizontal Layout
 ========================= */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(to right, #111, #2c2c2c);
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  margin-bottom: 25px;
-}
-/* Logo + Title Group */
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem; /* slightly smaller gap */
-  cursor: pointer;
-  transition: transform 0.3s ease, border 0.3s;
-  border: 1px solid transparent;
-  padding: 6px 10px; /* smaller padding */
-  border-radius: 8px;
-}
 
-.logo-title:hover {
-  transform: scale(1.05);
-  border-color: white;
-}
 
-/* Logo Image */
-.logo-img {
-  width: 50px;  /* smaller logo */
-  height: 50px;
-  background-image: url("../assets/homePage-asset/Github-Logo.webp");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
 
-/* Header Title */
-.header-title h1 {
-  color: white;
-  font-size: 28px; /* smaller main title */
-  margin-bottom: 2px;
-}
 
-.header-title h4 {
-  color: #ccc;
-  font-weight: 400;
-  font-size: 14px; /* smaller subtitle */
-}
 
-/* Navigation */
-header nav {
-  display: flex;
-  gap: 12px; /* slightly smaller gap between links */
-}
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 4px 8px;; /* smaller padding */
-  font-weight: 600;
-  border-radius: 6px;
-  transition: color 0.3s ease, background 0.3s ease, transform 0.2s;
-  font-size: 14px; /* slightly smaller link text */
-}
 
-header nav a:hover {
-  color: #00e676;
-  background-color: rgba(255, 255, 255, 0.05);
-  transform: translateY(-2px);
-}
+
+
+h
 
 /* =========================
    Container
@@ -131,38 +57,11 @@ p {
   font-size: 16px;
 }
 
-/* =========================
-   Lists
-========================= */
-ul, ol {
-  background: #333;
-  border-left: 4px solid white;
-  padding: 15px 25px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
 
-li {
-  margin-bottom: 10px;
-}
 
-/* =========================
-   Code & Preformatted
-========================= */
-pre {
-  background-color: #1a1a1a;
-  padding: 15px;
-  border-radius: 6px;
-  overflow-x: auto;
-}
 
-code {
-  font-family: "Courier New", monospace;
-  background-color: #222;
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: #00e676;
-}
+
+
 
 /* =========================
    Tip Box
@@ -176,48 +75,12 @@ code {
   font-style: italic;
 }
 
-/* =========================
-   Change Log
-========================= */
-.change-log {
-  margin-top: 40px;
-}
 
-.change-log h2 {
-  color: #00e676;
-  border-bottom: 2px solid white;
-}
 
-.change-log ul {
-  background: #222;
-  border-left: 4px solid #00e676;
-}
 
-.change-log li strong {
-  color: #00e676;
-}
 
-/* =========================
-   Footer
-========================= */
-footer {
-  background-color: #121212;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #444;
-}
 
-footer .fa {
-  margin: 0 10px;
-  color: #aaa;
-  transition: color 0.3s;
-}
 
-footer .fa:hover {
-  color: #00e676;
-}
 
 /* =========================
    Responsive
@@ -279,6 +142,7 @@ nav a:hover {
   code, pre {
     font-size: 12px;
     word-break: break-word;
+    text-align:left;
   }
 
   ul, ol {
