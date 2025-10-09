@@ -1,0 +1,134 @@
+##Git For Beginners : Git Guide
+
+Overview
+
+Welcome to the Git Guide project! This multi-page website is designed to help new developers understand the basics of Git and GitHub. Whether you're just starting out or need a refresher, this guide will walk you through everything from creating a repository to managing branches and resolving merge conflicts.
+
+This is a group project, and everyone has contributed to the creation of the website. Our main goal is to present Git concepts in a clear, practical way to help developers use version control in their daily workflows.
+
+Table of Contents
+
+Project Description
+
+How to Use This Repository
+
+Website Structure
+
+Contributing
+
+Team Members
+
+License
+
+Project Description
+
+This assignment is about understanding the why and how of using Git and GitHub. The project focuses on creating a website that explains key Git concepts for new developers.
+
+Key Features of the Website:
+
+Home Page: Introduction to the project and its purpose.
+
+Project Page: Explanation of remote repositories and the GitHub workflow.
+
+Changes Page: Guide on adding code to repositories with Git commands.
+
+Branching Page: Explanation of the importance of branching in Git and how to manage it.
+
+About Us Page: Meet the team and learn more about the contributors.
+
+How to Use This Repository
+Prerequisites
+
+To get started with this repository, make sure you have:
+
+Git installed on your machine. Install Git
+
+A code editor like Visual Studio Code or Sublime Text.
+
+Cloning the Repository
+
+Clone the repository using the following command:
+
+git clone https://github.com/chaitali786/git-for-beginners.git
+
+
+Navigate into the project directory:
+
+cd git-guide
+
+
+Open the project in your favorite code editor to start exploring!
+
+Running the Website
+
+Open the index.html file in your browser to view the website locally.
+
+If you'd like to contribute or edit content, simply make changes to the HTML and CSS files.
+
+Website Structure
+
+Here’s a breakdown of the website pages and what they cover:
+
+1. Home Page (index.html)
+
+A general introduction to Git and GitHub and why they’re important tools for developers.
+
+2. Project Page (project.html)
+
+A detailed explanation of why remote repositories are necessary.
+
+Step-by-step instructions on creating a project on GitHub.
+
+The essential Git commands to create a project locally, link it to a remote repo, and contribute.
+
+3. Changes Page (changes.html)
+
+Explains how to stage, commit, and push changes to a repository.
+
+Provides a walkthrough of the git add, git commit, and git push commands.
+
+4. Branching Page (branching.html)
+
+Discusses the importance of branching in Git.
+
+Explains how to create and delete branches using Git commands.
+
+5. About Us Page (about_us.html)
+
+A brief introduction to the team members who worked on this project.
+
+Contributing
+
+Since this is a group project, everyone contributed to different sections of the website and the repository. Here’s what we did:
+
+Each team member created their own branch for the section they worked on.
+
+Each person committed their changes and pushed them to the remote repository.
+
+We merged each branch back into the main branch.
+
+We resolved any merge conflicts along the way to ensure everything integrated smoothly.
+
+How to Contribute
+
+If you’d like to contribute to this project, follow these steps:
+
+Fork the repository to your own GitHub account.
+
+Create a new branch for your changes.
+
+Make changes to the HTML, CSS, or any other files you need.
+
+Commit your changes and push them to your forked repository.
+
+Open a pull request so we can review your changes and merge them into the main project.
+
+Team Members
+
+Here are the team members who worked on this project:
+
+Member 1: Responsible for the Home and Project pages.
+
+Member 2: Worked on the Changes and Branching pages.
+
+Member 3: Contributed to the About Us page and assisted with Git operations.
