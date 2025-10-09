@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,86 +6,82 @@
 }
 
 body {
-  background-color: gray;
-  color: #e2e2e2;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 20px;
-  padding-bottom: 40px;
+}
+header {
+  margin-bottom: 20px; 
 }
 
-nav {
-  background-image: linear-gradient(to top, black, gray);
-  padding: 10px 0;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+main {
+  
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
   padding: 20px;
-  background-color: gray; /* changed from #1a1a1a to gray */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+ 
 }
 
-h1, h2, h3 {
-  margin: 1em 0 0.5em;
-  color: #ffffff;
+article {
+  margin-bottom: 40px;
 }
 
 h2 {
+  margin-bottom: 10px;
   font-size: 24px;
+  
+  color: #ffffff;
   border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 p {
-  margin: 0.5em 0;
+  margin-bottom: 15px;
+  text-align: left;
   font-size: 16px;
+  color: #e2e2e2;
 }
+
 
 ul, ol {
   background: #2c2c2c;
-  border-left: 4px solid #00e676;
+  border-left: 4px solid rgb(240, 239, 231);
   padding: 20px 30px;
   margin: 20px 0;
   border-radius: 10px;
 }
 
-li {
+ul li, ol li {
   margin-bottom: 10px;
+  font-size: 16px;
 }
+
 
 pre {
   background-color: #1a1a1a;
   padding: 15px;
   border-radius: 6px;
+  margin-top: 10px;
   overflow-x: auto;
 }
 
 code {
-  font-family: "Courier New", monospace;
+  font-family: 'Courier New', monospace;
   background-color: #222;
   padding: 2px 6px;
   border-radius: 4px;
   color: #00e676;
 }
+
+
+
+
 
 footer {
   background-color: #121212;
@@ -102,21 +99,40 @@ footer .fa {
 }
 
 footer .fa:hover {
-  color: #00e676;
+  color: #4CAF50;
 }
 
+
 @media (max-width: 768px) {
+  
+  
+
+ 
+ 
+
+  
   h1, h2, h3 {
-    font-size: 24px;
+    margin-top: 40px;
+    font-size: 1.3rem;
     text-align: center;
   }
 
+  
   p {
     font-size: 15px;
+    text-align: left;
   }
 
+ 
+  footer .follow {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  
   code, pre {
     font-size: 14px;
     word-break: break-word;
   }
 }
+
