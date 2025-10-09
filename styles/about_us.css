@@ -289,3 +289,51 @@ footer a:hover {
     font-size: 1.4rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  main {
+    padding-top: 12rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .logo-img {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .header-title h1 {
+    font-size: 1.4rem;
+    align-self: flex-start;
+  }
+
+  .header-title h4 {
+    font-size: 0.5rem;
+  }
+
+  .nav {
+    font-size: 0.75rem;
+    padding-left: 5.5rem;
+  }
+
+  .logo-img {
+    margin: 0;
+  }
+
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
