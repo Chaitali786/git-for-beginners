@@ -1,53 +1,46 @@
-*{
-
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
 }
 
-html{
-
+html {
   height: 100vh;
 }
 
-body{
-
+body {
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: black;
   color: white;
-
 }
 
-.header{
-
+.header {
   min-height: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.8rem 0;
 }
 
-.img{
-
+.img {
   width: 3rem;
   height: 3.5rem;
-  margin: 2rem 0;
+  /*margin: 2rem 0;*/
+  padding: 0.5rem;
 }
 
-main{
 
+main {
   flex: 1;
 }
 
-footer{
-
+footer {
   min-height: 1.25rem;
 }
 
-.box-base{
-
+.box-base {
   width: 20%;
   height: auto;
   min-height: auto;
@@ -55,46 +48,33 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: rgba(128, 128, 128, 0.211);
   border-radius: 10px;
-  padding: 1rem;
-  
-  
-  
+  padding: 1.5rem;
+  box-shadow: 3px 3px 10px 3px rgb(240, 239, 231);
 }
 
-.update{
-  
+.update {
   width: 100%;
   display: flex;
   align-self: flex-start;
   align-items: center;
-  
 }
 
-code{
-
- background-color: rgba(128, 128, 128, 0.211);
- border-radius: 4px;
- padding: 0.2rem;
+code {
+  background-color: rgba(128, 128, 128, 0.211);
+  border-radius: 4px;
+  padding: 0.2rem;
 }
 
-.content{
-  
+.content {
   width: 100%;
   display: block;
   padding-left: 2rem;
   margin-bottom: 0.9rem;
-  
 }
 
-.content p{
-
+.content p {
   padding: 0.3rem;
 }
-
-
-
-
-
