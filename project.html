@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Page - Git and GitHub for Beginners</title>
+  <title>Git and GitHub for Beginners</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./styles/project.css">
 </head>
 <body>
-  <h1>Project Page - Git and GitHub for Beginners</h1>
 
-  <h2>Why Remote Repositories Are Important</h2>
-  <p> Remote repositories are necessary for collaboration, serving as a central hub for teams to share and synchronize code. They provide a critical backup of the project, protecting against local data loss and ensuring progress isn't tied to a single machine
+  <nav>
+    <a href="about_us.html">About Us</a>
+    <a href="branching.html">Branching</a>
+    <a href="changes.html">Changes</a>
+    <a href="project.html">Project</a>
+  </nav>    
 
-</p>
+  <div class="container">
+    <h1>Git and GitHub for Beginners</h1>
 
-  <h2>Steps to Create a Project on GitHub</h2>
-  <ol>
-    <li>Go to <a href="https://github.com" target="_blank">GitHub.com</a>.</li>
-    <li>Log in to your account or create a free one.</li>
-    <li>Click the <strong>+</strong> button in the top right and choose <strong>New repository</strong>.</li>
-    <li>Enter a <strong>Repository name</strong> (for example: <code>my-project</code>).</li>
-    <li>Write a short description (optional).</li>
-    <li>Choose if your repo will be <strong>Public</strong> (everyone can see it) or <strong>Private</strong> (only you can see it).</li>
-    <li>Click <strong>Create repository</strong>.</li>
-    <li>Copy the web address (URL) that looks like this: <code>https://github.com/yourusername/my-project.git</code>.</li>
-  </ol>
+    <div class="section">
+      <h2>Why Remote Repositories Are Important</h2>
+      <p>Remote repositories are necessary for collaboration, serving as a central hub for teams to share and synchronize code...</p>
+    </div>
 
-  <h2>Git Commands are need </h2>
+    <div class="section">
+      <h2>Steps to Create a Project on GitHub</h2>
+      <ol>
+        <li>Go to GitHub.com and log in.</li>
+        <li>Click on New Repository.</li>
+        <li>Enter a name and optional description.</li>
+        <li>Choose Public or Private.</li>
+        <li>Click Create repository.</li>
+      </ol>
+    </div>
 
-  <h3>1. Create a Project in Computer</h3>
-  <p>Use these commands in terminal or Git Bash:</p>
-  <pre><code># Create a new folder for the project
+    <div class="tip">
+      <strong>Tip:</strong> Always include a file called <code>README.md</code>.
+    </div>
+
+    <div class="section">
+      <h2>Git Commands You Need</h2>
+
+      <h3>1. Create a Project on Your Computer</h3>
+      <pre><code>
+# Create a new folder for the project
 mkdir my-project
 cd my-project
 
@@ -41,44 +56,48 @@ echo "# My Project" > README.md
 
 # Save your changes
 git add README.md
-git commit -m "First commit"</code></pre>
+git commit -m "First commit"
+      </code></pre>
 
-  <h3>2. Link the Local Project to GitHub</h3>
-  <pre><code># Connect the  local project to GitHub
+      <h3>2. Link the Local Project to GitHub</h3>
+      <pre><code>
+# Connect the local project to GitHub
 git remote add origin https://github.com/yourusername/my-project.git
 
 # Rename branch to main (if needed)
 git branch -M main
 
 # Upload your code to GitHub
-git push -u origin main</code></pre>
+git push -u origin main
+      </code></pre>
+    </div>
 
-  <h2>How Other People Can Help with Your Project</h2>
+    <div class="section">
+      <h2>How Other People Can Help with Your Project</h2>
 
-  <h3>1. If You Add Them as a Collaborator</h3>
-  <p>Collaborators can make changes directly to your GitHub project.</p>
-  <ol>
-    <li>Go to your GitHub repo → <strong>Settings → Collaborators</strong>.</li>
-    <li>Add your friend’s GitHub username or email.</li>
-    <li>They can copy your project to their computer using:</li>
-  </ol>
-  <pre><code>git clone https://github.com/yourusername/my-project.git</code></pre>
-  <ol start="4">
-    <li>They can make changes, save them, and send them back to GitHub with <code>git push</code>.</li>
-  </ol>
+      <h3>1. If You Add Them as a Collaborator</h3>
+      <ul>
+        <li>Go to your GitHub repo → Settings → Collaborators.</li>
+        <li>Add your friend’s GitHub username or email.</li>
+        <li>They can copy your project using: <code>git clone https://github.com/yourusername/my-project.git</code></li>
+        <li>They can make changes, save them, and send them back to GitHub with <code>git push</code>.</li>
+      </ul>
 
-  <h3>2. If Your Project Is Public (Open to Everyone)</h3>
-<p>If your project is public, anyone can help you improve it. Here’s how it works in simple steps:</p>
-<ol>
-<li>Someone clicks the <strong>Fork</strong> button on your GitHub page to make their own copy of your project.</li>
-<li>They make changes or add new features in their copy.</li>
-<li>When they finish, they click <strong>Pull Request</strong> to ask you to add their changes to your project.</li>
-<li>You look at their changes and decide whether to accept them or not.</li>
-</ol>
-<p>This is how people work together on open-source projects on GitHub.</p>
+      <h3>2. If Your Project Is Public</h3>
+      <ul>
+        <li>Anyone can click the Fork button to make their own copy of your project.</li>
+        <li>They make changes or add new features in their copy.</li>
+        <li>When finished, they click Pull Request to ask you to add their changes.</li>
+        <li>You review and decide whether to accept their changes.</li>
+      </ul>
+    </div>
 
+    <div class="tip">
+      <strong>Tip:</strong> Always include a file called <code>README.md</code>. It explains what your project does and how others can use it.
+    </div>
 
-<h2>Tip</h2>
-<p>Always include a file called <code>README.md</code>. It explains what your project does and how others can use it.</p>
+  </div> <!-- End container -->
+
 </body>
 </html>
+
