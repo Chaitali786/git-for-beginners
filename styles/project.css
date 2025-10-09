@@ -13,7 +13,7 @@
 body {
   background-color: #1a1a1a;
   color: #e2e2e2;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,6 +67,8 @@ header {
   color: white;
   font-size: 28px; /* smaller main title */
   margin-bottom: 2px;
+  font-family:'Montserrat', sans-serif;
+  color: rgba(255, 128, 0, 0.985);
 }
 
 .header-title h4 {
