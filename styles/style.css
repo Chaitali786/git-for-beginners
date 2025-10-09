@@ -29,7 +29,6 @@ main {
   background-color: gray;
 }
 
-
 header {
   background-image: linear-gradient(to top, black, gray);
   min-height: 10%;
@@ -56,7 +55,6 @@ header {
 .header-title {
   display: flex;
   flex-direction: column;
-  
 }
 
 .header-title h1 {
@@ -127,8 +125,7 @@ h2 {
   font-size: 1rem;
 }
 
-.info a{
-
+.info a {
   color: rgb(240, 239, 231);
 }
 
@@ -166,58 +163,46 @@ footer a:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width:375px) {
-  
-  .logo{
-    
+@media screen and (max-width: 375px) {
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0;
+    padding: 0;
   }
 
-  .logo-img{
-
+  .logo-img {
     width: 3.5rem;
     height: 2.5rem;
   }
 
-  .header-title{
-    
+  .header-title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-     
   }
 
-  .header-title h1{
-
+  .header-title h1 {
     font-size: 1.4rem;
     align-self: flex-start;
   }
 
-  .header-title h4{
-
+  .header-title h4 {
     font-size: 0.5rem;
   }
 
-  .nav{
-
+  .nav {
     font-size: 0.75rem;
     padding-left: 5.5rem;
-
   }
 
-  .logo-img{
-
+  .logo-img {
     margin: 0;
   }
 
-  footer{
-    
+  footer {
     display: flex;
     flex-direction: column;
-
   }
 }
