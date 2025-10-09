@@ -109,7 +109,7 @@ header {
 
 h2 {
   text-align: center;
-  padding: 1rem 0;
+  
 }
 
 .about {
@@ -238,6 +238,9 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-top: 12rem;
+  }
   /* Stack about section vertically */
   .about {
     flex-direction: column;
