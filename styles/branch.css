@@ -89,27 +89,6 @@ code {
 
 
 
-
-footer {
-  background-color: #121212;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #444;
-}
-
-footer .fa {
-  margin: 0 10px;
-  color: #aaa;
-  transition: color 0.3s;
-}
-
-footer .fa:hover {
-  color: #4CAF50;
-}
-
-
 @media (max-width: 768px) {
   
   h1, h2, h3 {
@@ -136,3 +115,5 @@ footer .fa:hover {
     word-break: break-word;
   }
 }
+
+  
