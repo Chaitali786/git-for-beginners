@@ -15,7 +15,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial;
   font-weight: 200;
   height: 100%;
   margin: 0;
@@ -50,15 +50,12 @@ header {
   width: 100%;
 }
 
-.header-title {
-  display: flex;
-  flex-direction: column;
-}
-
 .header-title h1 {
   font-size: 1.65rem;
   display: flex;
   align-self: flex-start;
+  font-family:'Montserrat', sans-serif;
+  color: rgba(255, 128, 0, 0.985);
 }
 
 .logo {
