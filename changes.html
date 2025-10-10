@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/changes.css" />
-    <title>Changes</title>
-  </head>
-  <body>
-    <header>
-      <div class="header">
-        <img src="assets/changes-asset/change.logo.png" alt="img" class="img" />
-        <h1>Git Changes Guide</h1>
-      </div>
-    </header>
-    <main>
-      <div class="box-base">
-        <div class="update">
-          <img
-            src="assets/changes-asset/update_logo.svg"
-            alt="img"
-            class="img"
-          />
-          <h2>Update a repo</h2>
-        </div>
-        <div class="content">
-          <p><code>git pull</code>→ get new changes</p>
-          <p><code>git pull origin branch-name</code>→  pull specific branch</p>
-        </div>
-      </div>
 
-      <div class="box-base">
-        <div class="update">
-          <img
-            src="assets/changes-asset/visibility.svg"
-            alt="img"
-            class="img"
-          />
-          <h2>Review Changes</h2>
-        </div>
-        <div class="content">
-          <p><code>git status</code>→ see changed files</p>
-          <p><code>git diff</code>→ see exact changes</p>
-          <p><code>git log</code>→ see commit history</p>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/changes.css" />
+  <title>Changes</title>
+</head>
 
-      <div class="box-base">
-        <div class="update">
-          <img
-            src="assets/changes-asset/add.svg"
-            alt="img"
-            class="img"
-          />
-          <h2>Add Changes</h2>
-        </div>
-        <div class="content">
-          <p><code>git add file-name</code>→ add one file</p>
-          <p><code>git add.</code>→ add all files</p>
-          <p><code>git commit -m "message"</code>→ save with a message</p>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <div class="logo-img"></div>
+        <div class="header-title">
+          <h1>Git</h1>
+          <h4>for Beginners</h4>
         </div>
       </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="branching.html">Branching</a>
+        <a href="changes.html">Changes</a>
+        <a href="project.html">Project</a>
+        <a href="about_us.html">About Us</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-content">
+      <img src="assets/changes-asset/change.logo.png" alt="img" class="img" />
+      <h1>Git Changes Guide</h1>
+    </div>
 
-      <div class="box-base">
-        <div class="update">
-          <img
-            src="assets/changes-asset/rocket.svg"
-            alt="img"
-            class="img"
-          />
-          <h2>Push Changes</h2>
-        </div>
-        <div class="content">
-          <p><code>git push</code>→ send your changes to GitHub</p>
-          <p><code>git pull origin branch-name</code> - pull specific branch</p>
-        </div>
+    <div class="box-base">
+      <div class="update">
+        <img src="assets/changes-asset/update_logo.svg" alt="img" class="img" />
+        <h2>Update a repo</h2>
       </div>
+      <div class="content">
+        <p><code>git pull</code>→ get new changes</p>
+        <p><code>git pull origin branch-name</code>→ pull specific branch</p>
+      </div>
+    </div>
 
-      <div class="box-base">
-        <div class="update">
-          <img
-            src="assets/changes-asset/close.svg"
-            alt="img"
-            class="img"
-          />
-          <h2>Remove Changes</h2>
-        </div>
-        <div class="content">
-          <p><code>git reset--soft Head~1</code>→ undo last commit(keep files)</p>
-          <p><code>git reset --hard Head~1</code> - delete commit & changes</p>
-        </div>
+    <div class="box-base">
+      <div class="update">
+        <img src="assets/changes-asset/visibility.svg" alt="img" class="img" />
+        <h2>Review Changes</h2>
       </div>
-    </main>
-    <footer></footer>
-  </body>
+      <div class="content">
+        <p><code>git status</code>→ see changed files</p>
+        <p><code>git diff</code>→ see exact changes</p>
+        <p><code>git log</code>→ see commit history</p>
+      </div>
+    </div>
+
+    <div class="box-base">
+      <div class="update">
+        <img src="assets/changes-asset/add.svg" alt="img" class="img" />
+        <h2>Add Changes</h2>
+      </div>
+      <div class="content">
+        <p><code>git add file-name</code>→ add one file</p>
+        <p><code>git add.</code>→ add all files</p>
+        <p><code>git commit -m "message"</code>→ save with a message</p>
+      </div>
+    </div>
+
+    <div class="box-base">
+      <div class="update">
+        <img src="assets/changes-asset/rocket.svg" alt="img" class="img" />
+        <h2>Push Changes</h2>
+      </div>
+      <div class="content">
+        <p><code>git push</code>→ send your changes to GitHub</p>
+        <p><code>git pull origin branch-name</code> - pull specific branch</p>
+      </div>
+    </div>
+
+    <div class="box-base">
+      <div class="update">
+        <img src="assets/changes-asset/close.svg" alt="img" class="img" />
+        <h2>Remove Changes</h2>
+      </div>
+      <div class="content">
+        <p>
+          <code>git reset--soft Head~1</code>→ undo last commit(keep files)
+        </p>
+        <p><code>git reset --hard Head~1</code> - delete commit & changes</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="follow">
+      Follow us on :
+      <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+    </p>
+    <p class="follow">&copy;2025 All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
