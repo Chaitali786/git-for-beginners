@@ -243,7 +243,11 @@ header {
   display: flex;
   align-self: flex-start;
   color: rgba(255, 128, 0, 0.985);
+<<<<<<< HEAD
   font-family: "Montserrat", sans-serif;
+=======
+  font-family:'Montserrat', sans-serif;
+>>>>>>> a3bbd6b6979791df30de34abcc28eeb1763a917c
 }
 
 .logo {
