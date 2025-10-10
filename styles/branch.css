@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +5,11 @@
 }
 
 body {
-  background-color: #0d0d0d;
+  background-color: rgb(240, 239, 231);
   color: #f1f1f1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial;
   line-height: 1.6;
+
 }
 header {
   margin-bottom: 20px; 
@@ -21,8 +21,27 @@ main {
   margin: 40px auto;
   padding: 20px;
   
+  
 }
 
+.info {
+
+  width: 100%;
+  text-align: center;
+  padding: 8rem 0;
+  font-size :24px;
+  
+}
+
+.info p{
+
+  color: #2c2c2c;
+}
+.info h3{
+
+  color: #2c2c2c;
+
+}
 .container {
   padding: 20px;
  
@@ -35,7 +54,6 @@ article {
 h2 {
   margin-bottom: 10px;
   font-size: 24px;
-  
   color: #ffffff;
   border-bottom: 1px solid #444;
   padding-bottom: 6px;
@@ -45,7 +63,7 @@ p {
   margin-bottom: 15px;
   text-align: left;
   font-size: 16px;
-  color: #e2e2e2;
+  color: #f9f7f7;
 }
 
 
@@ -55,11 +73,14 @@ ul, ol {
   padding: 20px 30px;
   margin: 20px 0;
   border-radius: 10px;
+   text-align: left !important;
 }
 
 ul li, ol li {
   margin-bottom: 10px;
   font-size: 16px;
+  text-align: left;        
+  
 }
 
 
@@ -73,7 +94,7 @@ pre {
 
 code {
   font-family: 'Courier New', monospace;
-  background-color: #222;
+  background-color: #1a1a1a;
   padding: 2px 6px;
   border-radius: 4px;
   color: #00e676;
@@ -82,34 +103,7 @@ code {
 
 
 
-
-footer {
-  background-color: #121212;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #444;
-}
-
-footer .fa {
-  margin: 0 10px;
-  color: #aaa;
-  transition: color 0.3s;
-}
-
-footer .fa:hover {
-  color: #4CAF50;
-}
-
-
 @media (max-width: 768px) {
-  
-  
-
- 
- 
-
   
   h1, h2, h3 {
     margin-top: 40px;
@@ -136,3 +130,4 @@ footer .fa:hover {
   }
 }
 
+  

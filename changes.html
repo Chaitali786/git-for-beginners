@@ -3,17 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/changes.css" />
     <title>Changes</title>
   </head>
   <body>
     <header>
       <div class="header">
-        <img src="assets/changes-asset/change.logo.png" alt="img" class="img" />
-        <h1>Git Changes Guide</h1>
+        <div class="logo">
+          <div class="logo-img"></div>
+          <div class="header-title">
+            <h1>Git</h1>
+            <h4>for Beginners</h4>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="branching.html">Branching</a>
+          <a href="changes.html">Changes</a>
+          <a href="project.html">Project</a>
+          <a href="about_us.html">About Us</a>
+        </div>
       </div>
     </header>
     <main>
+      <div class="page-content">
+        <img src="assets/changes-asset/change.logo.png" alt="img" class="img" />
+        <h1>Git Changes Guide</h1>
+      </div>
+
       <div class="box-base">
         <div class="update">
           <img
@@ -25,7 +50,7 @@
         </div>
         <div class="content">
           <p><code>git pull</code>→ get new changes</p>
-          <p><code>git pull origin branch-name</code>→  pull specific branch</p>
+          <p><code>git pull origin branch-name</code>→ pull specific branch</p>
         </div>
       </div>
 
@@ -47,11 +72,7 @@
 
       <div class="box-base">
         <div class="update">
-          <img
-            src="assets/changes-asset/add.svg"
-            alt="img"
-            class="img"
-          />
+          <img src="assets/changes-asset/add.svg" alt="img" class="img" />
           <h2>Add Changes</h2>
         </div>
         <div class="content">
@@ -63,11 +84,7 @@
 
       <div class="box-base">
         <div class="update">
-          <img
-            src="assets/changes-asset/rocket.svg"
-            alt="img"
-            class="img"
-          />
+          <img src="assets/changes-asset/rocket.svg" alt="img" class="img" />
           <h2>Push Changes</h2>
         </div>
         <div class="content">
@@ -78,19 +95,34 @@
 
       <div class="box-base">
         <div class="update">
-          <img
-            src="assets/changes-asset/close.svg"
-            alt="img"
-            class="img"
-          />
+          <img src="assets/changes-asset/close.svg" alt="img" class="img" />
           <h2>Remove Changes</h2>
         </div>
         <div class="content">
-          <p><code>git reset--soft Head~1</code>→ undo last commit(keep files)</p>
+          <p>
+            <code>git reset--soft Head~1</code>→ undo last commit(keep files)
+          </p>
           <p><code>git reset --hard Head~1</code> - delete commit & changes</p>
         </div>
       </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <p class="follow">
+        Follow us on :
+        <a
+          href="https://www.facebook.com/"
+          class="fa fa-facebook"
+          target="_blank"
+        ></a>
+        <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
+        <a
+          href="https://www.instagram.com"
+          class="fa fa-instagram"
+          target="_blank"
+        ></a>
+      </p>
+      <p class="follow">&copy;2025 All rights reserved.</p>
+    </footer>
   </body>
 </html>
