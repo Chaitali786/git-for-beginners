@@ -1,113 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Git and GitHub for Beginners</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/project.css">
+ 
 </head>
-
+ 
 <body>
-
+ 
   <header>
-  <div class="logo-title">
-    <div class="logo-img"></div>
-    <div class="header-title">
-      <h1>Git</h1>
-      <h4>for Beginners</h4>
-    </div>
-  </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="branching.html">Branching</a>
-    <a href="changes.html">Changes</a>
-    <a href="project.html">Project</a>
-  </nav>
-</header>
-
-  <div class="container">
-    <h1>Git and GitHub for Beginners</h1>
-
-    <div class="section">
-      <h2>Why Remote Repositories Are Important</h2>
-      <p>Remote repositories are necessary for collaboration, serving as a central hub for teams to share and synchronize code...</p>
-    </div>
-
-    <div class="section">
-      <h2>Steps to Create a Project on GitHub</h2>
-      <ol>
-        <li>Go to GitHub.com and log in.</li>
-        <li>Click on New Repository.</li>
-        <li>Enter a name and optional description.</li>
-        <li>Choose Public or Private.</li>
-        <li>Click Create repository.</li>
-      </ol>
-    </div>
-
-    <div class="tip">
-      <strong>Tip:</strong> Always include a file called <code>README.md</code>.
-    </div>
-
-    <div class="section">
-      <h2>Git Commands You Need</h2>
-
-      <h3>1. Create a Project on Your Computer</h3>
-      <pre><code>
-# Create a new folder for the project
-mkdir my-project
-cd my-project
-
-# Start a new Git repository
-git init
-
-# Create a file called README.md
-echo "# My Project" > README.md
-
-# Save your changes
-git add README.md
-git commit -m "First commit"
-      </code></pre>
-
-      <h3>2. Link the Local Project to GitHub</h3>
-      <pre><code>
-# Connect the local project to GitHub
-git remote add origin https://github.com/yourusername/my-project.git
-
-# Rename branch to main (if needed)
-git branch -M main
-
-# Upload your code to GitHub
-git push -u origin main
-      </code></pre>
-    </div>
-
-    <div class="section">
-      <h2>How Other People Can Help with Your Project</h2>
-
-      <h3>1. If You Add Them as a Collaborator</h3>
-      <ul>
-        <li>Go to your GitHub repo → Settings → Collaborators.</li>
-        <li>Add your friend’s GitHub username or email.</li>
-        <li>They can copy your project using: <code>git clone https://github.com/yourusername/my-project.git</code></li>
-        <li>They can make changes, save them, and send them back to GitHub with <code>git push</code>.</li>
-      </ul>
-
-      <h3>2. If Your Project Is Public</h3>
-      <ul>
-        <li>Anyone can click the Fork button to make their own copy of your project.</li>
-        <li>They make changes or add new features in their copy.</li>
-        <li>When finished, they click Pull Request to ask you to add their changes.</li>
-        <li>You review and decide whether to accept their changes.</li>
-      </ul>
-    </div>
-
-    <div class="tip">
-      <strong>Tip:</strong> Always include a file called <code>README.md</code>. It explains what your project does and how others can use it.
-    </div>
-
+      <div class="header">
+        <div class="logo">
+          <div class="logo-img"></div>
+          <div class="header-title">
+            <h1>Git</h1>
+            <h4>for Beginners</h4>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="branching.html">Branching</a>
+          <a href="changes.html">Changes</a>
+          <a href="project.html">Project</a>
+          <a href="about_us.html">About Us</a>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div class="info">
+      <h1>Git Projects</h1>
+ 
+      <article>
+        <h2>Why Remote Repositories Are Important</h2>
+        <p>Remote repositories are necessary for collaboration, serving as a central hub for teams to share and
+          synchronize code...</p>
+      </article>
+ 
+       <article>
+        <h2>Steps to Create a Project on GitHub</h2>
+        <ol>
+          <li>Go to GitHub.com and log in.</li>
+          <li>Click on New Repository.</li>
+          <li>Enter a name and optional description.</li>
+          <li>Choose Public or Private.</li>
+          <li>Click Create repository.</li>
+        </ol>
+      </article>
+ 
+      <p class="tip">
+        <strong>Tip:</strong> Always include a file called <code>README.md</code>.
+      </p>
+ 
+      <article>
+        <h2>Git Commands You Need</h2>
+ 
+        <h3>1. Create a Project on Your Computer</h3>
+        <pre class="code">
+        # Create a new folder for the project
+        mkdir my-project
+        cd my-project
+ 
+        # Start a new Git repository
+        git init
+ 
+        # Create a file called README.md
+        echo "# My Project" > README.md
+ 
+        # Save your changes
+        git add README.md
+        git commit -m "First commit"      
+      </pre>
+ 
+        <h3>2. Link the Local Project to GitHub</h3>
+        <pre class="code">
+        # Connect the local project to GitHub
+        git remote add origin
+        https://github.com/yourusername/my-project.git
+ 
+        # Rename branch to main (if needed)
+        git branch -M main
+ 
+        # Upload your code to GitHub
+        git push -u origin main
+      </pre>
+      </article>
+ 
+      <article>
+        <h2>How Other People Can Help with Your Project</h2>
+ 
+        <h3>1. If You Add Them as a Collaborator</h3>
+        <ul>
+          <li>Go to your GitHub repo → Settings → Collaborators.</li>
+          <li>Add your friend’s GitHub username or email.</li>
+          <li>They can copy your project using: <code>git clone https://github.com/yourusername/my-project.git</code>
+          </li>
+          <li>They can make changes, save them, and send them back to GitHub with <code>git push</code>.</li>
+        </ul>
+ 
+        <h3>2. If Your Project Is Public</h3>
+        <ul>
+          <li>Anyone can click the Fork button to make their own copy of your project.</li>
+          <li>They make changes or add new features in their copy.</li>
+          <li>When finished, they click Pull Request to ask you to add their changes.</li>
+          <li>You review and decide whether to accept their changes.</li>
+        </ul>
+      </article>
+ 
+      <p class="tip">
+        <strong>Tip:</strong> Always include a file called <code>README.md</code>. It explains what your project does
+        and how others can use it.
+      </p>
+ 
+  </main>
+  <footer>
+    <p class="follow">
+      Follow us on :
+      <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://x.com" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+    </p>
+    <p class="follow">&copy;2025 All rights reserved.</p>
+  </footer>
+ 
 </body>
-
+ 
 </html>
+ 

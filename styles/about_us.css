@@ -60,7 +60,7 @@ header {
   display: flex;
   align-self: flex-start;
   color: rgba(255, 128, 0, 0.985);
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -239,6 +239,7 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+
   /* Stack about section vertically */
   .about {
     flex-direction: column;
@@ -285,5 +286,12 @@ footer a:hover {
 
   .team-section h3 {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    flex: 1;
+    padding-top: 12rem;
   }
 }

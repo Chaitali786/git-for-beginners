@@ -1,289 +1,310 @@
-/* =========================
-   Reset & Box Sizing
-========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
-
-/* =========================
-   Body
-========================= */
+ 
+html {
+  height: 100vh;
+}
+ 
 body {
-  background-color: #1a1a1a;
-  color: #e2e2e2;
+  background-color: rgb(240, 239, 231);
   font-family: Arial;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 20px;
-  padding-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-/* =========================
-   Header Horizontal Layout
-========================= */
+ 
+main {
+  flex: 1;
+  background-color: rgb(240, 239, 231);
+  padding: 0 1rem;
+}
+ 
+.info h1{
+ 
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  padding: 5rem 2rem;
+}
+ 
+ 
 header {
+  background-image: linear-gradient(to top, black, gray);
+  min-height: 10%;
+  color: rgb(240, 239, 231);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #111, #2c2c2c);
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  margin-bottom: 25px;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
-/* Logo + Title Group */
-.logo-title {
+ 
+.header {
   display: flex;
-  align-items: center;
-  gap: 0.8rem; /* slightly smaller gap */
-  cursor: pointer;
-  transition: transform 0.3s ease, border 0.3s;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-shadow: 2px 2px 4px black;
+  width: 100%;
+}
+ 
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.header-title h1 {
+  font-size: 1.65rem;
+  display: flex;
+  align-self: flex-start;
+  color: rgba(255, 128, 0, 0.985);
+  font-family:'Montserrat', sans-serif;
+}
+ 
+.logo {
+  display: flex;
+  padding-left: 2rem;
   border: 1px solid transparent;
-  padding: 6px 10px; /* smaller padding */
-  border-radius: 8px;
+ 
 }
-
-.logo-title:hover {
-  transform: scale(1.05);
-  border-color: white;
+ 
+.logo:hover {
+  border: 1px solid rgb(240, 239, 231);
+  padding: 0.1rem;
+  border-radius: 4px;
 }
-
-/* Logo Image */
+ 
 .logo-img {
-  width: 50px;  /* smaller logo */
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-image: url("../assets/homePage-asset/Github-Logo.webp");
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
-  flex-shrink: 0;
+  margin: 0 1rem;
+ 
 }
-
-/* Header Title */
-.header-title h1 {
+ 
+.nav {
   color: white;
-  font-size: 28px; /* smaller main title */
-  margin-bottom: 2px;
-  font-family:'Montserrat', sans-serif;
-  color: rgba(255, 128, 0, 0.985);
+  font-size: 1.2em;
+  padding: 10px;
+  align-self: flex-end;
+  /*width: 100%;*/
 }
-
-.header-title h4 {
-  color: #ccc;
-  font-weight: 400;
-  font-size: 14px; /* smaller subtitle */
-}
-
-/* Navigation */
-header nav {
-  display: flex;
-  gap: 12px; /* slightly smaller gap between links */
-}
-
-header nav a {
-  color: #fff;
+ 
+.nav a {
+  color: white;
+  font-weight: 300;
+  margin: 0 15px;
   text-decoration: none;
-  padding: 4px 8px;; /* smaller padding */
-  font-weight: 600;
-  border-radius: 6px;
-  transition: color 0.3s ease, background 0.3s ease, transform 0.2s;
-  font-size: 14px; /* slightly smaller link text */
+  font-size: 0.9rem;
+  border: 1px solid transparent;
 }
-
-header nav a:hover {
-  color: #00e676;
-  background-color: rgba(255, 255, 255, 0.05);
-  transform: translateY(-2px);
+ 
+.nav a:hover {
+  border: 1px solid rgb(240, 239, 231);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
 }
-
-/* =========================
-   Container
-========================= */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #2c2c2c;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-}
-
-/* =========================
-   Headings
-========================= */
-h1, h2, h3 {
-  margin: 1em 0 0.5em;
-  color: #ffffff;
-}
-
-h2 {
+ 
+.info {
+  width: 100%;
+  text-align: center;
+  padding: 8rem 0;
   font-size: 24px;
+}
+ 
+.container {
+  padding: 20px;
+ 
+}
+ 
+article {
+  margin-bottom: 40px;
+}
+ 
+article h2{
+ 
+  color: #2c2c2c;
+  font-size: 1rem;
+ 
+}
+ 
+article h3{
+ 
+  font-size: 1rem;
+  color: #2c2c2c;
+}
+ 
+article p{
+ 
+  color: #2c2c2c;
+ 
+}
+ 
+.code{
+ 
+  display: flex;
+ align-self: flex-start;
+  font-size: 0.65rem;
+  color: #00e676;
+}
+ 
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #2c2c2c;
   border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
-
-/* =========================
-   Paragraphs
-========================= */
+ 
 p {
-  margin: 0.5em 0;
+  margin-bottom: 15px;
+  text-align: left;
   font-size: 16px;
+  color: white;
 }
-
-/* =========================
-   Lists
-========================= */
-ul, ol {
-  background: #333;
-  border-left: 4px solid white;
-  padding: 15px 25px;
+ 
+ 
+ul p{
+  color: #2c2c2c;
+}
+ol p{
+  color: #2c2c2c;
+}
+ 
+ul,ol {
+  background: #2c2c2c;
+  border-left: 4px solid rgb(240, 239, 231);
+  padding: 20px 30px;
   margin: 20px 0;
   border-radius: 10px;
+  color:white;
+  text-align: left !important;
 }
-
-li {
+ 
+ul li,
+ol li {
   margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+ 
 }
-
-/* =========================
-   Code & Preformatted
-========================= */
+ 
+ 
 pre {
   background-color: #1a1a1a;
   padding: 15px;
   border-radius: 6px;
+  margin-top: 10px;
   overflow-x: auto;
+  text-align: left;
+  font-size: 14px;
 }
-
+ 
 code {
-  font-family: "Courier New", monospace;
-  background-color: #222;
+  font-family: 'Courier New', monospace;
+  background-color: #1a1a1a;
   padding: 2px 6px;
   border-radius: 4px;
   color: #00e676;
+  text-align: left;
+  font-size: 14px;
 }
-
-/* =========================
-   Tip Box
-========================= */
-.tip {
-  background-color: #262626;
-  border-left: 4px solid white;
-  padding: 10px 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  font-style: italic;
-}
-
-/* =========================
-   Change Log
-========================= */
-.change-log {
-  margin-top: 40px;
-}
-
-.change-log h2 {
-  color: #00e676;
-  border-bottom: 2px solid white;
-}
-
-.change-log ul {
-  background: #222;
-  border-left: 4px solid #00e676;
-}
-
-.change-log li strong {
-  color: #00e676;
-}
-
-/* =========================
-   Footer
-========================= */
+ 
 footer {
-  background-color: #121212;
-  color: #aaa;
+  background-image: linear-gradient(to bottom, black, gray);
+  min-height: 10%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  line-height: 1;
   padding: 20px;
   text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #444;
 }
-
-footer .fa {
+ 
+footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
   margin: 0 10px;
-  color: #aaa;
-  transition: color 0.3s;
 }
-
-footer .fa:hover {
-  color: #00e676;
+ 
+footer p {
+  font-size: 1rem;
 }
-
-/* =========================
-   Responsive
-========================= */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo-title {
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-
-  header nav {
-    flex-wrap: wrap;
+ 
+footer a:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+ 
+.tip{
+ 
+  color: #2c2c2c;
+}
+ 
+@media screen and (max-width: 375px) {
+  .logo {
+    display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    padding: 0;
   }
-nav a:hover {
-  border: 1px solid rgb(240, 239, 231);
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 1.2rem;
-}
+ 
+  .logo-img {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+ 
+  .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+ 
   .header-title h1 {
-    font-size: 28px;
+    font-size: 1.4rem;
+    align-self: flex-start;
   }
-
+ 
   .header-title h4 {
-    font-size: 14px;
+    font-size: 0.5rem;
   }
-
-  header nav a {
-    font-size: 16px;
-    padding: 6px 10px;
+ 
+  .nav {
+    font-size: 0.75rem;
+    padding-left: 5.5rem;
   }
-
-  h1 {
-    font-size: 28px;
+ 
+  .logo-img {
+    margin: 0;
   }
-
-  h2 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  code, pre {
-    font-size: 12px;
-    word-break: break-word;
-  }
-
-  ul, ol {
-    padding: 10px 15px;
+ 
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
+ 
